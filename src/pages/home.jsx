@@ -4,9 +4,11 @@ import './home.css'
 export default function Home(){
     return (
         <>
-            <div id='background'>
-                <img src={backroundImg} alt="" />
-                <h1 className='texto'>Adonay Santos <br /> Full Stack Developer</h1>
+            <div className='home'>
+                <div id='background'>
+                    <img src={backroundImg} alt="" />
+                    <h1 className='texto'>Adonay Santos <br /> Full Stack Developer</h1>
+                </div>
             </div>
         </>
     )

@@ -12,6 +12,7 @@ header {
     align-items: center;
     padding: 10px;
     height: 70px;
+    z-index: 1;
 }
 
 
@@ -31,6 +32,7 @@ nav a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+
 }
 
 .cv-button:hover {

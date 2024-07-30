@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Header.css'
 import favicon from '../../assets/favicon.ico'
+import App from '../../App'
 
 
 export default function Header(){
@@ -11,9 +12,11 @@ export default function Header(){
 
     return (
         <header>
-            <img src={favicon} alt="logo" className='logo'/>
+            <a href="#home">
+               <img src={favicon} alt="logo" className='logo'/> 
+            </a>
             <nav className='links'>
-                <Link to='/'>Home</Link>
+                <Link to='#home'>Home</Link>
                 <Link>About</Link>
                 <Link>Projects</Link>
                 <Link to='/Contato'>Contact</Link>

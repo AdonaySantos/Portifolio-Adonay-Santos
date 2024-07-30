@@ -19,7 +19,7 @@
     position: absolute; /* Posiciona a imagem absolutamente dentro do contêiner */
     top: 0;
     left: 0;
-    z-index: -2; /* Coloca a imagem atrás do texto e do efeito de vinheta */
+    z-index: -2; /* Coloca a imagem atrás do texto e da sobreposição */
 }
 
 #background::before {
@@ -29,8 +29,19 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.95)); /* Cria o efeito de vinheta */
-    z-index: -1; /* Coloca o efeito de vinheta entre a imagem e o texto */
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent); /* Aumenta a opacidade da sombra */
+    z-index: -1; /* Coloca a sobreposição entre a imagem e o texto */
+}
+
+#background::after {
+    content: ''; /* Necessário para criar o pseudo-elemento */
+    position: absolute; /* Posiciona absolutamente dentro do contêiner */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.909), transparent); /* Adiciona uma camada extra de sobreposição */
+    z-index: -1; /* Coloca a sobreposição entre a imagem e o texto */
 }
 
 .texto {
@@ -44,6 +55,6 @@
     left: 0;
     color: white; /* Define a cor do texto para melhor contraste */
     font-size: 2rem; /* Ajusta o tamanho da fonte conforme necessário */
-    z-index: 1; /* Garante que o texto esteja sobre a imagem e o efeito de vinheta */
+    z-index: 0; /* Garante que o texto esteja sobre a imagem e a sobreposição */
     text-align: center; /* Centraliza o texto */
 }
