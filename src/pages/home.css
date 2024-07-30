@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações do contêiner do fundo */
+#background {
+    position: relative; /* Permite que elementos filhos sejam posicionados relativamente a este contêiner */
+    width: 100%;
+    height: 100vh; /* Ajusta a altura para ocupar toda a tela */
+    overflow: hidden; /* Oculta barras de rolagem */
+}
+
+#background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra todo o contêiner */
+    position: absolute; /* Posiciona a imagem absolutamente dentro do contêiner */
+    top: 0;
+    left: 0;
+    z-index: -2; /* Coloca a imagem atrás do texto e do efeito de vinheta */
+}
+
+#background::before {
+    content: ''; /* Necessário para criar o pseudo-elemento */
+    position: absolute; /* Posiciona absolutamente dentro do contêiner */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.95)); /* Cria o efeito de vinheta */
+    z-index: -1; /* Coloca o efeito de vinheta entre a imagem e o texto */
+}
+
+.texto {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Posiciona absolutamente dentro do contêiner */
+    top: 0;
+    left: 0;
+    color: white; /* Define a cor do texto para melhor contraste */
+    font-size: 2rem; /* Ajusta o tamanho da fonte conforme necessário */
+    z-index: 1; /* Garante que o texto esteja sobre a imagem e o efeito de vinheta */
+    text-align: center; /* Centraliza o texto */
+}
