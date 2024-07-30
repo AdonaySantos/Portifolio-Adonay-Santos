@@ -1,14 +1,39 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: rgb(114, 114, 119);
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+}
+
+
 nav a {
-    margin: 0 10px;
-    color: black;
+    margin: 0 15px;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    font-family: Verdana;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+.cv-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cv-button:hover {
+    background-color: #444040;
+    color: #ffffff; 
 }
