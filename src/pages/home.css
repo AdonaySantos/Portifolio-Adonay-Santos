@@ -5,14 +5,14 @@
 }
 
 /* Configurações do contêiner do fundo */
-#background {
+#home-content {
     position: relative; /* Permite que elementos filhos sejam posicionados relativamente a este contêiner */
     width: 100%;
     height: 100vh; /* Ajusta a altura para ocupar toda a tela */
     overflow: hidden; /* Oculta barras de rolagem */
 }
 
-#background img {
+#home-content img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Garante que a imagem cubra todo o contêiner */
@@ -22,7 +22,7 @@
     z-index: -2; /* Coloca a imagem atrás do texto e da sobreposição */
 }
 
-#background::before {
+#home-content::before {
     content: ''; /* Necessário para criar o pseudo-elemento */
     position: absolute; /* Posiciona absolutamente dentro do contêiner */
     top: 0;
@@ -33,28 +33,40 @@
     z-index: -1; /* Coloca a sobreposição entre a imagem e o texto */
 }
 
-#background::after {
+#home-content::after {
     content: ''; /* Necessário para criar o pseudo-elemento */
     position: absolute; /* Posiciona absolutamente dentro do contêiner */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.909), transparent); /* Adiciona uma camada extra de sobreposição */
+    background: linear-gradient(to bottom, #000e24, transparent); /* Adiciona uma camada extra de sobreposição */
     z-index: -1; /* Coloca a sobreposição entre a imagem e o texto */
 }
 
-.texto {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    width: 100%;
-    height: 100%;
-    position: absolute; /* Posiciona absolutamente dentro do contêiner */
-    top: 0;
-    left: 0;
-    color: white; /* Define a cor do texto para melhor contraste */
-    font-size: 2rem; /* Ajusta o tamanho da fonte conforme necessário */
-    z-index: 0; /* Garante que o texto esteja sobre a imagem e a sobreposição */
-    text-align: center; /* Centraliza o texto */
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o texto horizontalmente e verticalmente */
+    color: white;
+    z-index: 1;
+}
+
+/* Estilos para os textos */
+.texto-h2, .texto-h1 {
+    margin: 10px 0; /* Espaçamento entre os textos */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.texto-h2 {
+    font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+.texto-h1 {
+    font-size: 5rem; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
 }
