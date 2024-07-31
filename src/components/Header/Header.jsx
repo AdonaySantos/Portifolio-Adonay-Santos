@@ -16,13 +16,14 @@ export default function Header(){
                <img src={favicon} alt="logo" className='logo'/> 
             </a>
             <nav className='links'>
+                {/* criar um map para os elementos de Link */}
                 <Link to='#home'>Home</Link>
                 <Link>About</Link>
                 <Link>Projects</Link>
                 <Link to='/Contato'>Contact</Link>
             </nav>
             <div className='cv-button'>
-                <a href={buttonlink}>Currículo </a>
+                <a href={buttonlink}>Resumo</a>
             </div>
         </header>
     )
