@@ -2,6 +2,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import './App.css';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import Home from './pages/home';
 
 const router = createBrowserRouter([
@@ -9,10 +10,11 @@ const router = createBrowserRouter([
     element:
     (
       <>
-        <div>
-          <Header />
-          <Outlet />
-        </div>
+        <Header />
+        <main>
+          <Home />
+        </main>
+        <Footer />
       </>
     ),
     children:[
