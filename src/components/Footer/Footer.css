@@ -1,16 +1,28 @@
-footer .text-footer{
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centraliza o texto horizontalmente e verticalmente */
-    color: white;
-    font-size: 0.8rem;
-    font-family: "Montserrat", sans-serif;
+.container-footer {
+    position: relative; /* Necessário para o posicionamento absoluto dos elementos filhos */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: flex-end; /* Alinha os itens ao fundo do contêiner */
+    padding: 1rem; /* Adiciona algum espaçamento interno */
+    height: 100px; /* Ajuste conforme necessário */
 }
 
+/* Texto do Rodapé */
+footer .text-footer {
+    position: absolute;
+    bottom: 0; /* Posiciona o texto no fundo do contêiner */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o texto horizontalmente */
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 1rem;
+}
+
+/* Links de Contato */
 footer .contact-links {
     position: absolute;
-    top: 95%;
-    left: 90%;
-    transform: translate(-50%, -50%); /* Centraliza o texto horizontalmente e verticalmente */
+    bottom: 0; /* Posiciona os links no fundo do contêiner */
+    right: 0; /* Posiciona os links no lado direito */
+    margin: 0px 15rem; /* Adiciona algum espaçamento interno */
 }

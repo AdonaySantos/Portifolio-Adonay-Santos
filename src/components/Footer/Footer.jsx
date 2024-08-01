@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import githubicon from '../../assets/developer-white.ico'
+import githubicon from '../../assets/developer.ico'
 import './Footer.css';
 
 export default function Footer() {
@@ -7,10 +7,10 @@ export default function Footer() {
 
     return (
         <footer className='container-footer'>
+            <p className='text-footer'>© {new Date().getFullYear()} Adonay Santos. <u> Crafted by yours truly </u></p>
             <div className='contact-links'>
                     <Link to={adonaySantos}><img src={githubicon} alt="GitHub" className='git-icon'/></Link>
             </div>
-            <p className='text-footer'>© {new Date().getFullYear()} Adonay Santos. <u> Crafted by yours truly </u></p>
         </footer>
     );
 }
