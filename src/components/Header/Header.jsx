@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom'
-import './Header.css'
-import favicon from '../../assets/favicon.ico'
-import App from '../../App'
+import { Link } from 'react-router-dom';
+import favicon from '../../assets/favicon-light.ico';
+import './Header.css';
 
 
 export default function Header(){
@@ -11,20 +10,24 @@ export default function Header(){
 
 
     return (
-        <header>
-            <a href="#home">
-               <img src={favicon} alt="logo" className='logo'/> 
-            </a>
-            <nav className='links'>
-                {/* criar um map para os elementos de Link */}
-                <Link to='#home'>Home</Link>
-                <Link>About</Link>
-                <Link>Projects</Link>
-                <Link to='/Contato'>Contact</Link>
-            </nav>
-            <div className='cv-button'>
-                <a href={buttonlink}>Resumo</a>
-            </div>
-        </header>
+        <>
+            <section>
+                <header>
+                    <a href="#home">
+                        <img src={favicon} alt="logo" className='logo'/> 
+                    </a>
+                    <nav className='links'>
+                        <Link to='/'>Home</Link>
+                        <Link>About</Link>
+                        <Link>Projects</Link>
+                        <Link to='/contact'>Contact</Link>
+                    </nav>
+                    <div className='cv-button'>
+                        <a href={buttonlink}>Resumo</a>
+                    </div>
+                </header>
+            </section>
+        </>
+
     )
 }
