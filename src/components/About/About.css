@@ -1,0 +1,25 @@
+.about{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 0px 200px 0px;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.h2-about {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin: 30px;
+    font-size: 2.4rem;
+    line-height: 41.8px;
+}
+
+.p-about {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
