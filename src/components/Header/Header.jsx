@@ -5,7 +5,7 @@ import './Header.css';
 
 export default function Header(){
     const buttonlink = () => {
-        window.location.href = 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:0d9dc94a-147d-4619-b028-5a64d26dfbb2'
+        window.location.href = 'https://drive.google.com/file/d/1ygxpDoT8QXGwVyRuVuRgnETYmrXfSAvB/view?usp=sharing'
     };
 
 
@@ -23,7 +23,7 @@ export default function Header(){
                         <Link to='/contact'>Contact</Link>
                     </nav>
                     <div className='cv-button'>
-                        <a href={buttonlink}>Resumo</a>
+                        <button onClick={buttonlink}>Resumo</button>
                     </div>
                 </header>
             </section>

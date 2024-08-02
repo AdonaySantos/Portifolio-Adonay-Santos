@@ -19,7 +19,9 @@ nav a {
     font-weight: 500;
 }
 
+/* Estilo do botão */
 .cv-button {
+    display: inline-flex; /* Garante que o botão se ajuste ao conteúdo */
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: 600;
@@ -29,9 +31,20 @@ nav a {
     border-radius: 5px;
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
+    text-align: center; /* Garante que o texto esteja centralizado */
 }
 
+/* Efeito de hover */
 .cv-button:hover {
     background-color: #001b44;
-    color: #ffffff; 
+    color: #ffffff;
+}
+
+/* Estilo para o botão */
+.cv-button button {
+    all: unset; /* Remove estilos padrão do botão */
+    display: block; /* Faz o botão ocupar o tamanho total do contêiner */
+    width: 100%; /* Faz o botão ocupar toda a largura do contêiner */
+    height: 100%; /* Faz o botão ocupar toda a altura do contêiner */
+    text-align: center; /* Centraliza o texto no botão */
 }
