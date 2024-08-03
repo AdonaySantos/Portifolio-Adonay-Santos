@@ -17,7 +17,7 @@ export default function About() {
                     In my spare time i like to practice English, play video <br />
                     games, to read, and solve logical problems with code. <br />
                     I'm always down for hearing about new projects, problems or <br />
-                    some stuff like that
+                    some stuff like that, thanks for your attention!
                     </p>
                 </div>
             </section>

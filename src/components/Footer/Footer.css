@@ -21,7 +21,7 @@ footer .text-footer {
 
 /* Links de Contato */
 footer .contact-links {
-    position: absolute;
+    position: fixed;
     bottom: 0; /* Posiciona os links no fundo do contêiner */
     right: 0; /* Posiciona os links no lado direito */
     margin: 0px 15rem; /* Adiciona algum espaçamento interno */

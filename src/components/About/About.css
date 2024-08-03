@@ -1,11 +1,12 @@
-.about{
+.about {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0px 0px 200px 0px;
+    margin: 0px 160px 220px 160px;
 }
-.about-container{
+
+.about-container {
     display: flex;
     flex-direction: column;
 }
@@ -22,4 +23,57 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 1.3rem;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .about {
+        margin: 0px 100px 120px 100px
+    }
+    .h2-about {
+        font-size: 2rem;
+        margin: 20px;
+    }
+    .p-about {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .about {
+        margin: 0px 50px 80px 50px
+    }
+    .h2-about {
+        font-size: 1.8rem;
+        margin: 15px;
+    }
+    .p-about {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        margin: 0px 40px 60px 40px
+    }
+    .h2-about {
+        font-size: 1.6rem;
+        margin: 10px;
+    }
+    .p-about {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        margin: 0px 30px 50px 30px
+    }
+    .h2-about {
+        font-size: 1.4rem;
+        margin: 5px;
+    }
+    .p-about {
+        font-size: 0.9rem;
+    }
 }

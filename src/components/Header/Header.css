@@ -9,7 +9,7 @@ header {
     z-index: 1;
 }
 
-
+/* Estilo dos links de navegação */
 nav a {
     margin: 0 15px;
     color: rgb(0, 0, 0);
@@ -47,4 +47,47 @@ nav a {
     width: 100%; /* Faz o botão ocupar toda a largura do contêiner */
     height: 100%; /* Faz o botão ocupar toda a altura do contêiner */
     text-align: center; /* Centraliza o texto no botão */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    nav a {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    }
+
+    .cv-button {
+        padding: 8px 16px; /* Ajusta o padding */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    }
+}
+
+@media (max-width: 992px) {
+    .cv-button {
+        padding: 6px 14px; /* Ajusta o padding */
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+    }
+}
+
+@media (max-width: 768px) {
+
+    nav a {
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+        margin: 5px 15px; /* Ajusta a margem */
+    }
+
+    .cv-button {
+        padding: 5px 10px; /* Ajusta o padding */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    }
+}
+
+@media (max-width: 576px) {
+    nav a {
+        font-size: 0.7rem; /* Reduz o tamanho da fonte */
+    }
+
+    .cv-button {
+        padding: 4px 8px; /* Ajusta o padding */
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+    }
 }
