@@ -8,6 +8,7 @@ export default function Home(){
     const [currentTech, setCurrentTech] = useState(tecnologias[0]);
     let index = 0;
 
+    // Efeito de aparecer e desaparecer tecnologias utilizadas
     useEffect(() => {
         const intervalId = setInterval(() => {
             index = (index + 1) % tecnologias.length;
@@ -17,6 +18,7 @@ export default function Home(){
         return () => clearInterval(intervalId);
     }, []);
 
+    // Efeito de desaparecimento de elementos conforme a página desce
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
