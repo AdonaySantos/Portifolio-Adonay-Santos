@@ -1,35 +1,20 @@
-.about {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0px 160px 220px 160px;
-}
-
-.about-container {
-    display: flex;
-    flex-direction: column;
+.h2-about, .p-about {
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .h2-about {
-    font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    margin: 30px;
     font-size: 2.4rem;
-    line-height: 41.8px;
 }
 
 .p-about {
-    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 1.3rem;
 }
 
 /* Media Queries para Responsividade */
 @media (max-width: 1200px) {
-    .about {
-        margin: 0px 100px 120px 100px
-    }
     .h2-about {
         font-size: 2rem;
         margin: 20px;
@@ -40,9 +25,6 @@
 }
 
 @media (max-width: 992px) {
-    .about {
-        margin: 0px 50px 80px 50px
-    }
     .h2-about {
         font-size: 1.8rem;
         margin: 15px;
@@ -53,9 +35,6 @@
 }
 
 @media (max-width: 768px) {
-    .about {
-        margin: 0px 40px 60px 40px
-    }
     .h2-about {
         font-size: 1.6rem;
         margin: 10px;
@@ -66,9 +45,6 @@
 }
 
 @media (max-width: 576px) {
-    .about {
-        margin: 0px 30px 50px 30px
-    }
     .h2-about {
         font-size: 1.4rem;
         margin: 5px;

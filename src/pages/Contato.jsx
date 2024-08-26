@@ -5,8 +5,8 @@ export default function Contato() {
     return (
         <>
             <section>
-                <div id="contact-content">
-                    <div className='form-container'>
+                <div id="content">
+                    <div id='container'>
                         <h2>Say hello</h2>
                         <div className='form-content'>
                             <label htmlFor="email" className='email'>Email</label>

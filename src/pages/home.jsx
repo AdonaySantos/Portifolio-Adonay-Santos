@@ -1,4 +1,3 @@
-import backroundImg from '../assets/background-home-light.png'
 import './home.css'
 import About from '../components/About/About'
 import { useEffect, useState } from 'react';
@@ -22,7 +21,7 @@ export default function Home(){
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
-            const opacity = Math.max(1 - scrollY / 400, 0); // Calcula a opacidade com base na rolagem
+            const opacity = Math.max(1 - scrollY / 380, 0); // Calcula a opacidade com base na rolagem
             document.querySelector('.text-container').style.opacity = opacity;
         };
 
@@ -34,8 +33,8 @@ export default function Home(){
     return (
         <>
             <section className='home'>
-                <div id='home-content'>
-                    <div className='text-container'>
+                <div id='content'>
+                    <div id='container'>
                         <h2 className='texto-h2'>ADONAY SANTOS</h2>
                         <h1 className='texto-h1'>Developer <br /></h1>
                         <h1 className='texto-h1-span'>
@@ -47,7 +46,9 @@ export default function Home(){
                 </div>
             </section>
             <section className='home'>
-                <About></About>
+                <div id='About'>
+                    <About />
+                </div>
             </section>
         </>
     )

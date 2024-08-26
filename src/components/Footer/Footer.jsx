@@ -7,6 +7,7 @@ export default function Footer() {
 
     return (
         <footer className='container-footer'>
+            <div></div>
             <p className='text-footer'>© {new Date().getFullYear()} Adonay Santos. <u> Crafted by yours truly </u></p>
             <div className='contact-links'>
                     <Link to={adonaySantos}><img src={githubicon} alt="GitHub" className='git-icon'/></Link>
