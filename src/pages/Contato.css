@@ -61,3 +61,19 @@
     color: #000000;
     padding: 15px 15px;
 }
+
+.contact-button{
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #070707;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    width: 200px;
+}
+
+.contact-button button {
+    all: unset;
+}

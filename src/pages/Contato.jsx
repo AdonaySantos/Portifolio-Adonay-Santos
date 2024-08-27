@@ -24,7 +24,10 @@ export default function Contato() {
                             </div>
                             <div className='underline-input'></div>
                         </div>
-                        <button className='send-message'>Send</button>
+                        <div className='contact-button'>
+                            <button className='send-message'>Send Message</button>
+                        </div>
+
                     </div>
                 </div>
             </section>
