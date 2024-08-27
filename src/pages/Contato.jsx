@@ -4,17 +4,25 @@ export default function Contato() {
 
     return (
         <>
-            <section>
-                <div id="content">
+            <section className='contact'>
+                <div id="content-contact">
                     <div id='container'>
                         <h2>Say hello</h2>
                         <div className='form-content'>
-                            <label htmlFor="email" className='email'>Email</label>
-                            <input type="email" className='email'/><br />
-                            <div className='underline'></div>
-                            <label htmlFor="text" className='text'>Message</label>
-                            <input type="text" /><br />
-                            <div className='underline'></div>
+                            <div className='lines'>
+                                <div className='underline'></div>
+                                <div className='underline-hello'></div>
+                            </div>
+                            <div className='input-field'>
+                                <label htmlFor="email" className='label'>Email</label>
+                                <input type="email" className='input'/><br />
+                            </div>
+                            <div className='underline-input'></div>
+                            <div className='input-field'>
+                                <label htmlFor="text" className='label'>Message</label>
+                                <input type="text" className='input'/><br />
+                            </div>
+                            <div className='underline-input'></div>
                         </div>
                         <button className='send-message'>Send</button>
                     </div>
